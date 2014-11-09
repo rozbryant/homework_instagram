@@ -19,6 +19,20 @@ class PhotosController < ApplicationController
 
   end
 
+  def destroy_row
+    @the_id = params[:id]
+    d = Photo.find_by({ :id => @the_id})
+    d.destroy
+  end
+
+  def edit_form
+
+  end
+
+  def update_row
+
+
+  end
 
 
 end
