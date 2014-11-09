@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get("/all_photos", { :controller => "photos", :action => "index" })
   get("/photo_details/:id", { :controller => "photos", :action => "show" })
 
+  # Route to add photos
+  get("/new_photo_form", { :controller => "photos", :action => "new_form" })
+  get("/create_photo", { :controller => "photos", :action => "create_row" })
 end
